@@ -1,0 +1,12 @@
+{% extends "base3.html" %}
+{%block content%}
+
+<h2> Hi {{full_name}}</h2>
+<iframe src="/twitters/create/" name="targetframe" width="600"  allowTransparency="true" scrolling="yes" frameborder="1" >
+    </iframe>
+    <hr>
+   
+<iframe src="/twitters/all/" name="targetframe1" width="600" height="500" allowTransparency="true" scrolling="yes" frameborder="1" >
+    </iframe>
+
+{% endblock%}

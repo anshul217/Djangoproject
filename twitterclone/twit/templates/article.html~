@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{twit.title}}</h1>
+<p>{{twit.body}}</p>
+{% endblock %}

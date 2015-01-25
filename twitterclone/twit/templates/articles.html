@@ -1,0 +1,23 @@
+<html>
+<head>
+       
+        <title>Ajax Page</title>
+       
+</head>
+<body>
+{% block sidebar%}
+
+{% endblock %}
+{% block content %}
+{% for twit in twits %}
+<div>
+<h2>{{twit.title}}</h2>
+<p>{{twit.body}}</p>
+<p>Twitted by :{{twit.author}}</p>
+<p>Date : {{twit.twit_date}}</p>
+<hr>
+</div>
+{% endfor %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+{% block sidebar%}
+
+<ul>
+<li><a href="/twitters/all" >Cancel</a></li>
+</ul>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+{% endblock %}
+</html>

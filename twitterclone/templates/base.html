@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<header>
+<title>{%block title%}MY base Template{% endblock%}</title>
+
+<style type="text/css">
+body{
+text-align: center;
+
+}
+#ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 220px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #7A991A;
+}
+#page{
+width: 960px;
+text-align: left;
+margin: 10px auto 20px auto;
+
+}
+#sidebar{
+float: left;
+width: 200px;
+border: 2px solid #dadada ;
+
+
+padding: 10px;
+}
+#content{
+float: left;
+width: 600px;
+border: 1px solid #f00;
+padding: 10px;
+}
+</style>
+</header>
+<body>
+<div id="page">
+<div id="#li1">
+<ul id="#ul1">
+  <li ><a href="#home">Twitter Clone</a></li>
+  <li ><a href="#news">News</a></li>
+  <li ><a href="#contact">Contact</a></li>
+
+</ul>
+</div>
+<br>
+<br>
+<table>
+<tr>
+<td><div id="sidebar">
+{% block sidebar %}
+<ul>
+<li><a  >Twits</a></li>
+
+</ul>
+{% endblock %}
+</div></td>
+<td><div id="content">
+{% block content%}This is the content area{% endblock %}
+</div></td>
+</tr>
+</table>
+
+
+</div>
+</body>
+</html>

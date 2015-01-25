@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+{% block sidebar%}
+
+<ul>
+<li><a href="/twitters/all" >Cancel</a></li>
+</ul>
+
+{% endblock %}
+
+{% block content %}
+
+<form action="/twitters/create/" method="post">{% csrf_token%}
+<ul>
+{{form.as_ul}}
+</ul>
+<input type="submit" name="twit" value="Create twit">
+</form>
+
+{% endblock %}
+</html>

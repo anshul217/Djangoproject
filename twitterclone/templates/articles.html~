@@ -1,0 +1,10 @@
+<html>
+<body>
+<h1>Twits</h1>
+{% for twit in twits %}
+<h2><a href="/twit/get/{{twit.id}}/">{{twit.title}}</a></h2>
+<p>{{twit.body}}</p>
+</div>
+{% endfor %}
+</body>
+</html>

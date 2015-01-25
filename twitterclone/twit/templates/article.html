@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block sidebar %}
+<ul>
+<li><a href="/twitters/all" >Twits</a></li>
+
+</ul>
+{% endblock %}
+
+{% block content %}
+<h1>{{twit.title}}</h1>
+<p>{{twit.body}}</p>
+{% endblock %}

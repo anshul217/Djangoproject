@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+<title>{%block title%}Twitter Clone{% endblock%}</title>
+
+<style type="text/css">
+body{
+text-align: center;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 220px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #6666FF;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: #0000FF;
+}
+#page{
+width: 960px;
+text-align: left;
+margin: 10px auto 20px auto;
+
+}
+#sidebar{
+float: left;
+width: 200px;
+border: 2px solid #dadada ;
+
+
+padding: 10px;
+}
+#content{
+float: left;
+width: 800px;
+border: 1px solid #FFFFCC;
+padding: 10px;
+align-content: center;
+}
+</style>
+</header>
+<body>
+<div id="page">
+<div >
+<ul >
+  <li ><a href="#home">Twitter Clone</a></li>
+	<li><a href="#home">anshulgupta217@gmail.com</a></li>
+  <li ><a href="/accounts/register/">Signup</a></li>
+</ul>
+</div>
+<img src="logo.jpeg" alt="">
+<br>
+<br>
+<hr>
+<br>
+<div id="content">
+{% block content%}This is the content area{% endblock %}
+</div>
+</div>
+</body>
+</html>
